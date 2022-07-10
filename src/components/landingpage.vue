@@ -2,18 +2,14 @@
   <div>
     <div class="w-full">
       <div class="w-full">
-        <div class="w-full bg-black relative z-10">
-          <div class="w-full absolute top-0 h-full -z-10">
-            <img
-              src="../assets/eduardo-arcos-y8yf9r_WflE-unsplash.jpg"
-              class="w-full h-full object-center object-cover"
-              alt=""
-            />
+        <div class="w-full bg-black relative z-10 overflow-hidden">
+          <div class="w-full h-full absolute top-0 lg:-translate-y-20 -z-10">
+            <slide class="" />
           </div>
-          <div class="w-full relative bg-black bg-opacity-50">
+          <div class="w-full relative">
             <!-- nav -->
 
-            <nav class="w-full pt-2">
+            <nav class="w-full pt-2 hidden">
               <div class="max-w-screen-xl mx-auto px-4 py-3 rounded-3xl">
                 <div class="w-full flex items-center justify-between">
                   <img
@@ -68,10 +64,10 @@
             <!-- herosection -->
             <div class="w-full px-4">
               <div
-                class="max-w-screen-xl mx-auto py-40 lg:py-64 flex flex-col items-center"
+                class="max-w-screen-xl mx-auto py-40 lg:py-64 flex flex-col items-start"
               >
                 <h1
-                  class="text-white text-4xl lg:text-5xl font-bold text-center max-w-4xl"
+                  class="text-black bg-white px-4 lg:px-10 py-10 lg:py-10 text-4xl lg:text-6xl bg-opacity-100 font-extrabold text-left max-w-2xl"
                 >
                   Driving
                   <span class="text-green-500"> Access and Inclusion to EVs</span> in
@@ -84,9 +80,16 @@
         <div class="w-full mt-20 lg:mt-32">
           <div class="max-w-screen-xl mx-auto">
             <div class="w-full grid grid-cols-3 lg:grid-cols-6 gap-x-20 gap-y-10">
-              <div class="w-full h-[15rem] lg:h-[30rem] col-span-3">
+              <div
+                class="w-full h-[15rem] lg:h-[20rem] col-span-3 lg:rounded-3xl relative overflow-hidden hover:skew-y-2 transition-transform ease-linear duration-500"
+              >
                 <img
-                  src="../assets/evcar.gif"
+                  src="../assets/logocar.png"
+                  class="absolute inset-5 w-40 hidden lg:block z-10 rounded-xl"
+                  alt=""
+                />
+                <img
+                  src="../assets/eduardo-arcos-y8yf9r_WflE-unsplash.jpg"
                   class="w-full h-full object-cover object-center"
                   alt=""
                 />
@@ -120,7 +123,9 @@
         <div class="w-full mt-20 lg:mt-32">
           <div class="max-w-screen-xl mx-auto">
             <div class="w-full grid grid-cols-3 lg:grid-cols-6 gap-x-20 gap-y-10">
-              <div class="w-full h-[15rem] lg:h-[30rem] col-span-3 lg:order-2">
+              <div
+                class="w-full h-[15rem] lg:h-[30rem] col-span-3 lg:order-2 lg:rounded-3xl relative overflow-hidden hover:skew-y-2 transition-transform ease-linear duration-500"
+              >
                 <img
                   src="../assets/carimg.png"
                   class="w-full h-full object-cover object-center"
@@ -240,10 +245,12 @@
             </div>
           </div>
         </div>
-        <div class="w-full mt-20 lg:mt-32">
+        <div class="w-full mt-20 lg:mt-32 hidden">
           <div class="max-w-screen-xl mx-auto">
             <div class="w-full grid grid-cols-3 lg:grid-cols-6 gap-x-20 gap-y-10">
-              <div class="w-full h-[15rem] lg:h-[30rem] col-span-3">
+              <div
+                class="w-full h-[15rem] lg:h-[20rem] col-span-3 lg:rounded-3xl relative overflow-hidden transition-transform ease-linear duration-500"
+              >
                 <img
                   src="../assets/evdashboard.jpg"
                   class="w-full h-full object-cover object-center"
@@ -280,9 +287,13 @@
         </div>
         <div class="w-full">
           <div class="max-w-screen-xl mx-auto mt-20 lg:mt-32">
-            <div class="grid grid-cols-12 gap-10 lg:gap-10 rounded-3xl">
-              <div class="col-span-12 bg-black relative overflow-hidden">
-                <div class="w-full h-full absolute top-0">
+            <div class="grid grid-cols-12 gap-10 lg:gap-10">
+              <div
+                class="col-span-12 bg-black relative overflow-hidden group rounded-3xl"
+              >
+                <div
+                  class="w-full h-full absolute top-0 scale-110 group-hover:scale-100 transition-all ease-linear duration-200"
+                >
                   <img
                     src="../assets/evinterior.jpg"
                     class="w-full h-full object-cover object-center"
@@ -290,14 +301,18 @@
                   />
                 </div>
                 <div class="w-full relative z-10 bg-gradient-to-br from-black">
-                  <div class="space-y-5 max-w-lg py-20 px-10">
-                    <p class="text-3xl font-semibold text-white">EV Marketplace</p>
+                  <div class="space-y-5 max-w-lg py-20 lg:py-28 px-10">
+                    <p
+                      class="text-3xl font-semibold text-white group-hover:text-green-500 transition-all ease-linear duration-200"
+                    >
+                      EV Marketplace
+                    </p>
                     <p class="text-base font-normal text-slate-200 leading-5">
                       Buy or sell anything from Electric cars, motor bikes, spare parts,
                       batteries
                     </p>
                     <button
-                      class="px-5 py-3 font-semibold text-sm text-white border hover:bg-white hover:text-black transition-colors ease-in-out duration-300 rounded-md flex w-fit items-center space-x-2 border-slate-200"
+                      class="px-5 py-3 font-semibold text-sm text-white border group-hover:bg-white group-hover:text-black transition-colors ease-in-out duration-300 rounded-md flex w-fit items-center space-x-2 border-slate-200"
                     >
                       <span>Join the Waitlist</span>
                       <span
@@ -317,17 +332,21 @@
                   </div>
                 </div>
               </div>
-              <div class="col-span-12 lg:col-span-6 relative lg:h-[40rem] bg-black">
-                <div class="w-full h-full absolute top-0">
+              <div
+                class="col-span-12 lg:col-span-6 relative lg:h-[40rem] bg-black group rounded-3xl overflow-hidden"
+              >
+                <div class="w-full h-full absolute top-0 overflow-hidden">
                   <img
                     src="../assets/happydriver.jpg"
-                    class="w-full h-full object-cover object-center"
+                    class="w-full h-full object-cover object-center scale-110 group-hover:scale-100 transition-all ease-linear duration-200"
                     alt=""
                   />
                 </div>
                 <div class="w-full h-full relative z-10 bg-gradient-to-br from-black">
                   <div class="space-y-5 max-w-md py-20 px-10">
-                    <p class="text-3xl font-semibold text-white">
+                    <p
+                      class="text-3xl font-semibold text-white group-hover:text-green-500 transition-all ease-linear duration-200"
+                    >
                       EV Asset financing, Servicing and Insurance
                     </p>
                     <p class="text-base font-normal text-slate-200 leading-5">
@@ -335,7 +354,7 @@
                       enjoy insurance and service of your electric vehicle
                     </p>
                     <button
-                      class="px-5 py-3 font-semibold text-sm text-white border rounded-md flex w-fit hover:bg-white hover:text-black transition-colors ease-in-out duration-300 items-center space-x-2 border-slate-200"
+                      class="px-5 py-3 font-semibold text-sm text-white border rounded-md flex w-fit group-hover:bg-white group-hover:text-black transition-colors ease-in-out duration-300 items-center space-x-2 border-slate-200"
                     >
                       <span>Join the Waitlist</span>
                       <span
@@ -355,17 +374,21 @@
                   </div>
                 </div>
               </div>
-              <div class="col-span-12 lg:col-span-6 relative lg:h-[40rem] bg-black">
+              <div
+                class="col-span-12 lg:col-span-6 relative lg:h-[40rem] bg-black group overflow-hidden rounded-3xl"
+              >
                 <div class="w-full h-full absolute top-0">
                   <img
                     src="../assets/batteryharging.jpg"
-                    class="w-full h-full object-cover object-center"
+                    class="w-full h-full object-cover scale-110 group-hover:scale-100 transition-all ease-linear duration-200 object-center"
                     alt=""
                   />
                 </div>
                 <div class="w-full h-full relative z-10 bg-gradient-to-br from-black">
                   <div class="space-y-5 max-w-md py-20 px-10">
-                    <p class="text-3xl font-semibold text-white">
+                    <p
+                      class="text-3xl font-semibold text-white group-hover:text-green-500 transition-all ease-linear duration-200"
+                    >
                       Battery Charging and Swapping Stations Locator
                     </p>
                     <p class="text-base font-normal text-slate-200 leading-5">
@@ -373,7 +396,7 @@
                       Check for compatibility with your vehicle and pay to book on the go!
                     </p>
                     <button
-                      class="px-5 py-3 font-semibold text-sm text-white border rounded-md flex w-fit hover:bg-white hover:text-black transition-colors ease-in-out duration-300 items-center space-x-2 border-slate-200"
+                      class="px-5 py-3 font-semibold text-sm text-white border rounded-md flex w-fit group-hover:bg-white group-hover:text-black transition-colors ease-in-out duration-300 items-center space-x-2 border-slate-200"
                     >
                       <span>Join the Waitlist</span>
                       <span
@@ -617,6 +640,7 @@
             </div>
           </div>
         </div>
+
         <footer class="w-full mt-20 lg:mt-32 bg-black">
           <div class="grid grid-cols-5 gap-x-20 pt-32">
             <div class="w-full col-span-2">
@@ -718,8 +742,9 @@
 
 <script>
 import modal from "../components/modal.vue";
+import slide from "./slide.vue";
 export default {
-  components: { modal },
+  components: { modal, slide },
   data() {
     return {
       modalContent: "",
