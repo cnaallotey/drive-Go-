@@ -287,8 +287,8 @@
         </div>
         <div class="w-full">
           <div class="max-w-screen-xl mx-auto mt-20 lg:mt-32 px-4">
-            <div class="grid grid-cols-12 gap-10 lg:gap-10 overflow-hidden">
-              <div class="col-span-12 bg-black relative overflow-hidden group">
+            <div class="grid grid-cols-8 gap-10 overflow-hidden">
+              <div class="col-span-8 bg-black relative overflow-hidden group">
                 <div
                   class="w-full h-full absolute top-0 scale-110 group-hover:scale-100 transition-all ease-linear duration-200"
                 >
@@ -299,9 +299,7 @@
                   />
                 </div>
                 <div class="w-full relative z-10 bg-gradient-to-br from-black">
-                  <div
-                    class="space-y-5 max-w-sm lg:max-w-lg py-20 lg:py-28 px-4 lg:px-10"
-                  >
+                  <div class="space-y-5 py-20 lg:py-28 px-4 lg:px-10">
                     <p
                       class="text-3xl font-semibold text-white group-hover:text-green-500 transition-all ease-linear duration-200"
                     >
@@ -333,7 +331,7 @@
                 </div>
               </div>
               <div
-                class="col-span-12 lg:col-span-6 relative lg:h-[40rem] bg-black group overflow-hidden"
+                class="col-span-8 lg:col-span-4 relative lg:h-[40rem] bg-black group overflow-hidden"
               >
                 <div class="w-full h-full absolute top-0 overflow-hidden">
                   <img
@@ -342,7 +340,7 @@
                     alt=""
                   />
                 </div>
-                <div class="w-full h-full relative z-10 bg-gradient-to-br from-black">
+                <div class="w-fit h-full relative z-10 bg-gradient-to-br from-black">
                   <div class="space-y-5 max-w-sm md:max-w-md py-20 px-4 lg:px-10">
                     <p
                       class="text-3xl font-semibold text-white group-hover:text-green-500 transition-all ease-linear duration-200"
@@ -375,7 +373,7 @@
                 </div>
               </div>
               <div
-                class="col-span-12 lg:col-span-6 relative lg:h-[40rem] bg-black group overflow-hidden"
+                class="col-span-8 lg:col-span-4 relative lg:h-[40rem] bg-black group overflow-hidden"
               >
                 <div class="w-full h-full absolute top-0">
                   <img
@@ -385,7 +383,7 @@
                   />
                 </div>
                 <div class="w-full h-full relative z-10 bg-gradient-to-br from-black">
-                  <div class="space-y-5 max-w-sm lg:max-w-md py-20 px-4 lg:px-10">
+                  <div class="space-y-5 w-fit lg:max-w-md py-20 px-4 lg:px-10">
                     <p
                       class="text-3xl font-semibold text-white group-hover:text-green-500 transition-all ease-linear duration-200"
                     >
