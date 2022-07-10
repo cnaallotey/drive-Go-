@@ -31,9 +31,9 @@ const onSlideChange = () => {
       autoplay=""
     >
       <swiper-slide
-        ><div class="w-full h-auto">
+        ><div class="w-full h-full">
           <img
-            src="https://images.unsplash.com/photo-1642569135400-9e09b38dc200?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1631&q=80"
+            src="../assets/ev3.jpg"
             class="object-center object-cover h-full w-full"
             alt=""
           /></div

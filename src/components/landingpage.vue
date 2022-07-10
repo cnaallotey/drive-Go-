@@ -3,7 +3,7 @@
     <div class="w-full">
       <div class="w-full">
         <div class="w-full bg-black relative z-10 overflow-hidden">
-          <div class="w-full h-full absolute top-0 lg:-translate-y-20 -z-10">
+          <div class="w-full h-full absolute top-0 -z-10">
             <slide class="" />
           </div>
           <div class="w-full relative">
@@ -67,7 +67,7 @@
                 class="max-w-screen-xl mx-auto py-40 lg:py-64 flex flex-col items-start"
               >
                 <h1
-                  class="text-black bg-white px-4 lg:px-10 py-10 lg:py-10 text-4xl lg:text-6xl bg-opacity-100 font-extrabold text-left max-w-2xl"
+                  class="text-black bg-white px-4 lg:px-10 py-10 lg:py-10 text-4xl lg:text-6xl lg:leading-snug bg-opacity-100 font-extrabold text-left max-w-2xl"
                 >
                   Driving
                   <span class="text-green-500"> Access and Inclusion to EVs</span> in
@@ -81,7 +81,7 @@
           <div class="max-w-screen-xl mx-auto">
             <div class="w-full grid grid-cols-3 lg:grid-cols-6 gap-x-20 gap-y-10">
               <div
-                class="w-full h-[15rem] lg:h-[20rem] col-span-3 lg:rounded-3xl relative overflow-hidden hover:skew-y-2 transition-transform ease-linear duration-500"
+                class="w-full h-[15rem] lg:h-[20rem] col-span-3 lg:rounded-none relative overflow-hidden transition-transform ease-linear duration-500"
               >
                 <img
                   src="../assets/logocar.png"
@@ -155,17 +155,17 @@
                   EVs are vehicles with electric motors, versus the traditional combustion
                   engine powered by gasoline or diesel.
                 </p>
-                <div class="w-full grid grid-cols-2 gap-5 mt-10">
+                <div class="w-full grid grid-cols-1 lg:grid-cols-2 gap-5 mt-10">
                   <div class="w-full flex items-center space-x-2">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="h-10 w-10 text-green-700"
+                      class="h-10 w-10 text-green-500"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
                       <path
                         fill-rule="evenodd"
-                        d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                        d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                         clip-rule="evenodd"
                       />
                     </svg>
@@ -176,13 +176,13 @@
                   <div class="w-full flex items-center space-x-2">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="h-10 w-10 text-green-700"
+                      class="h-10 w-10 text-green-500"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
                       <path
                         fill-rule="evenodd"
-                        d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                        d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                         clip-rule="evenodd"
                       />
                     </svg>
@@ -193,13 +193,13 @@
                   <div class="w-full flex items-center space-x-2">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="h-10 w-10 text-green-700"
+                      class="h-10 w-10 text-green-500"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
                       <path
                         fill-rule="evenodd"
-                        d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                        d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                         clip-rule="evenodd"
                       />
                     </svg>
@@ -210,13 +210,13 @@
                   <div class="w-full flex items-center space-x-2">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="h-10 w-10 text-green-700"
+                      class="h-10 w-10 text-green-500"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
                       <path
                         fill-rule="evenodd"
-                        d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                        d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                         clip-rule="evenodd"
                       />
                     </svg>
@@ -246,7 +246,7 @@
           </div>
         </div>
         <div class="w-full mt-20 lg:mt-32 hidden">
-          <div class="max-w-screen-xl mx-auto">
+          <div class="max-w-screen-xl mx-auto px-4">
             <div class="w-full grid grid-cols-3 lg:grid-cols-6 gap-x-20 gap-y-10">
               <div
                 class="w-full h-[15rem] lg:h-[20rem] col-span-3 lg:rounded-3xl relative overflow-hidden transition-transform ease-linear duration-500"
@@ -286,11 +286,9 @@
           </div>
         </div>
         <div class="w-full">
-          <div class="max-w-screen-xl mx-auto mt-20 lg:mt-32">
-            <div class="grid grid-cols-12 gap-10 lg:gap-10">
-              <div
-                class="col-span-12 bg-black relative overflow-hidden group rounded-3xl"
-              >
+          <div class="max-w-screen-xl mx-auto mt-20 lg:mt-32 px-4">
+            <div class="grid grid-cols-12 gap-10 lg:gap-10 overflow-hidden">
+              <div class="col-span-12 bg-black relative overflow-hidden group">
                 <div
                   class="w-full h-full absolute top-0 scale-110 group-hover:scale-100 transition-all ease-linear duration-200"
                 >
@@ -301,7 +299,9 @@
                   />
                 </div>
                 <div class="w-full relative z-10 bg-gradient-to-br from-black">
-                  <div class="space-y-5 max-w-lg py-20 lg:py-28 px-10">
+                  <div
+                    class="space-y-5 max-w-sm lg:max-w-lg py-20 lg:py-28 px-4 lg:px-10"
+                  >
                     <p
                       class="text-3xl font-semibold text-white group-hover:text-green-500 transition-all ease-linear duration-200"
                     >
@@ -333,7 +333,7 @@
                 </div>
               </div>
               <div
-                class="col-span-12 lg:col-span-6 relative lg:h-[40rem] bg-black group rounded-3xl overflow-hidden"
+                class="col-span-12 lg:col-span-6 relative lg:h-[40rem] bg-black group overflow-hidden"
               >
                 <div class="w-full h-full absolute top-0 overflow-hidden">
                   <img
@@ -343,7 +343,7 @@
                   />
                 </div>
                 <div class="w-full h-full relative z-10 bg-gradient-to-br from-black">
-                  <div class="space-y-5 max-w-md py-20 px-10">
+                  <div class="space-y-5 max-w-sm md:max-w-md py-20 px-4 lg:px-10">
                     <p
                       class="text-3xl font-semibold text-white group-hover:text-green-500 transition-all ease-linear duration-200"
                     >
@@ -375,7 +375,7 @@
                 </div>
               </div>
               <div
-                class="col-span-12 lg:col-span-6 relative lg:h-[40rem] bg-black group overflow-hidden rounded-3xl"
+                class="col-span-12 lg:col-span-6 relative lg:h-[40rem] bg-black group overflow-hidden"
               >
                 <div class="w-full h-full absolute top-0">
                   <img
@@ -385,7 +385,7 @@
                   />
                 </div>
                 <div class="w-full h-full relative z-10 bg-gradient-to-br from-black">
-                  <div class="space-y-5 max-w-md py-20 px-10">
+                  <div class="space-y-5 max-w-sm lg:max-w-md py-20 px-4 lg:px-10">
                     <p
                       class="text-3xl font-semibold text-white group-hover:text-green-500 transition-all ease-linear duration-200"
                     >
@@ -420,8 +420,8 @@
           </div>
         </div>
         <div class="mt-20 lg:mt-32 w-full">
-          <div class="max-w-screen-xl mx-auto">
-            <div class="w-full flex flex-col items-center mb-10">
+          <div class="max-w-screen-xl mx-auto px-4">
+            <div class="w-full flex flex-col lg:items-center mb-10">
               <div class="w-fit flex items-center space-x-2">
                 <h2
                   class="text-base text-green-500 font-semibold max-w-2xl tracking-wide uppercase lg:text-center"
@@ -436,7 +436,7 @@
                 Get to know our process
               </p>
             </div>
-            <div class="grid px-4 grid-cols-1 lg:grid-cols-2 gap-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
               <div class="p-5 rounded-2xl bg-slate-100 relative">
                 <button
                   @click="
@@ -446,7 +446,7 @@
                   "
                   class="w-full flex items-center justify-between text-gray-900"
                 >
-                  <p class="text-base font-semibold leading-6">
+                  <p class="text-base text-left font-semibold leading-6">
                     Do electric cars break down more?
                   </p>
                   <svg
@@ -474,7 +474,7 @@
                   "
                   class="w-full flex items-center justify-between text-gray-900"
                 >
-                  <p class="text-base font-semibold leading-6">
+                  <p class="text-base text-left font-semibold leading-6">
                     Can you buy or sell second-hand electric cars?
                   </p>
                   <svg
@@ -502,7 +502,7 @@
                   "
                   class="w-full flex items-center justify-between text-gray-900"
                 >
-                  <p class="text-base font-semibold leading-6">
+                  <p class="text-base text-left font-semibold leading-6">
                     How can my EV’s battery last?
                   </p>
                   <svg
@@ -530,7 +530,7 @@
                   "
                   class="w-full flex items-center justify-between text-gray-900"
                 >
-                  <p class="text-base font-semibold leading-6">
+                  <p class="text-base text-left font-semibold leading-6">
                     How long does it take to charge an EV battery?
                   </p>
                   <svg
@@ -554,16 +554,16 @@
         </div>
         <div class="w-full mt-20">
           <div
-            class="max-w-scren-sm flex flex-col lg:flex-row items-center justify-center space-x-5"
+            class="max-w-scren-sm px-4 flex flex-col lg:flex-row lg:items-center justify-center lg:space-x-5"
           >
-            <img src="../assets/car.png" class="h-32 w-auto" alt="" />
+            <img src="../assets/car.png" class="w-40" alt="" />
             <p class="text-base lg:text-lg font-semibold leading-6">
               Can’t find what you are looking for? <br />
               Send us a message
             </p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5 rotate-90"
+              class="h-5 w-5 mt-5 lg:mt-0 rotate-90"
               viewBox="0 0 20 20"
               fill="currentColor"
             >
