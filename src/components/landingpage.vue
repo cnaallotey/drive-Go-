@@ -6,10 +6,10 @@
           <div class="w-full h-full absolute top-0 -z-10">
             <slide class="" />
           </div>
-          <div class="w-full relative">
+          <div class="w-full relative bg-opacity-80 bg-black">
             <!-- nav -->
 
-            <nav class="w-full pt-2 hidden">
+            <nav class="w-full pt-2">
               <div class="max-w-screen-xl mx-auto px-4 py-3 rounded-3xl">
                 <div class="w-full flex items-center justify-between">
                   <img
@@ -64,10 +64,10 @@
             <!-- herosection -->
             <div class="w-full px-4">
               <div
-                class="max-w-screen-xl mx-auto py-40 lg:py-64 flex flex-col items-start"
+                class="max-w-screen-xl mx-auto py-20 lg:py-32 flex flex-col items-center relative"
               >
                 <h1
-                  class="text-black bg-white px-4 lg:px-10 py-10 lg:py-10 text-4xl lg:text-6xl lg:leading-snug bg-opacity-100 font-extrabold text-left max-w-2xl"
+                  class="text-white px-4 text-4xl lg:text-6xl lg:leading-snug bg-opacity-100 font-extrabold text-center max-w-2xl"
                 >
                   Driving
                   <span class="text-green-500"> Access and Inclusion to EVs</span> in
@@ -77,7 +77,12 @@
             </div>
           </div>
         </div>
-        <div class="w-full mt-20 lg:mt-32">
+        <div
+          class="w-full flex justify-center relative z-20 -translate-y-10 lg:-translate-y-20"
+        >
+          <img src="../assets/car.png" class="h-32 lg:h-56 w-auto" alt="" />
+        </div>
+        <div class="w-full">
           <div class="max-w-screen-xl mx-auto">
             <div class="w-full grid grid-cols-3 lg:grid-cols-6 gap-x-20 gap-y-10">
               <div
@@ -340,7 +345,7 @@
                     alt=""
                   />
                 </div>
-                <div class="w-fit h-full relative z-10 bg-gradient-to-br from-black">
+                <div class="w-full h-full relative z-10 bg-gradient-to-br from-black">
                   <div class="space-y-5 max-w-sm md:max-w-md py-20 px-4 lg:px-10">
                     <p
                       class="text-3xl font-semibold text-white group-hover:text-green-500 transition-all ease-linear duration-200"
