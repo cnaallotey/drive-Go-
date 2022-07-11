@@ -33,7 +33,7 @@ const onSlideChange = () => {
       <swiper-slide
         ><div class="w-full h-full">
           <img
-            src="../assets/ev3.jpg"
+            src="../assets/ev4.jpg"
             class="object-center object-cover h-full w-full"
             alt=""
           /></div

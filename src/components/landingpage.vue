@@ -14,7 +14,7 @@
                 <div class="w-full flex items-center justify-between">
                   <img
                     src="../assets/logocar.png"
-                    class="w-auto h-10 rounded-lg object-cover object-center"
+                    class="w-auto h-10 object-cover object-center"
                     alt=""
                   />
 
@@ -64,10 +64,10 @@
             <!-- herosection -->
             <div class="w-full px-4">
               <div
-                class="max-w-screen-xl mx-auto py-20 lg:py-32 flex flex-col items-center relative"
+                class="max-w-screen-xl mx-auto py-20 lg:py-40 flex flex-col items-center relative"
               >
                 <h1
-                  class="text-white px-4 text-4xl lg:text-6xl lg:leading-snug bg-opacity-100 font-extrabold text-center max-w-2xl"
+                  class="text-white px-4 text-4xl tracking-tight lg:text-6xl bg-opacity-100 font-extrabold text-center max-w-2xl"
                 >
                   Driving
                   <span class="text-green-500"> Access and Inclusion to EVs</span> in
@@ -80,7 +80,7 @@
         <div
           class="w-full flex justify-center relative z-20 -translate-y-10 lg:-translate-y-20"
         >
-          <img src="../assets/car.png" class="h-32 lg:h-56 w-auto" alt="" />
+          <img src="../assets/car.png" class="h-32 lg:h-64 w-auto" alt="" />
         </div>
         <div class="w-full">
           <div class="max-w-screen-xl mx-auto">
@@ -578,68 +578,77 @@
             </svg>
           </div>
         </div>
-        <div class="w-full bg-black mt-20 lg:mt-32">
-          <div class="max-w-screen-md mx-auto px-4 py-20">
-            <div
-              class="w-full bg-white rounded-2xl shadow-lg pt-8 lg:pt-8 mt-5 overflow-hidden"
-            >
-              <h3
-                class="text-2xl font-semibold text-gray-900 mb-5 px-8 text-center lg:text-left"
+        <div class="w-full bg-black mt-20 lg:mt-32 relative z-10">
+          <div class="w-full h-full -z-10 absolute inset-0">
+            <img
+              src="../assets/ev4.jpg"
+              class="w-full h-full object-cover object-bottom"
+              alt=""
+            />
+          </div>
+          <div class="w-full bg-black bg-opacity-80">
+            <div class="max-w-screen-md mx-auto px-4 py-20 lg:py-32">
+              <div
+                class="w-full bg-white rounded-2xl shadow-lg pt-8 lg:pt-8 mt-5 overflow-hidden"
               >
-                Contact form
-              </h3>
-              <form action="submit" id="contact_form" class="w-full">
-                <div class="w-full lg:flex px-5 lg:px-8">
-                  <div class="flex w-full lg:w-1/2 h-full flex-col lg:mr-8">
-                    <label for="name" class="text-sm text-gray-700 mb-1"
-                      >Your name <span class="text-red-500">*</span></label
-                    ><input
-                      type="text"
-                      name="name"
-                      placeholder="eg. John Doe"
-                      class="rounded-lg border-gray-200"
-                      required
-                    />
-                    <label for="email" class="text-sm text-gray-700 mb-1 mt-4"
-                      >Your email <span class="text-red-500">*</span></label
-                    ><input
-                      type="email"
-                      name="email"
-                      placeholder="eg. you@example.com"
-                      class="rounded-lg border-gray-200"
-                      required
-                    />
-                    <label for="Phone" class="text-sm text-gray-700 mb-1 mt-4"
-                      >Your phone number</label
-                    ><input
-                      type="tel"
-                      name="contact"
-                      placeholder=""
-                      class="rounded-lg border-gray-200"
-                    />
+                <h3
+                  class="text-2xl font-semibold text-gray-900 mb-5 px-8 text-center lg:text-left"
+                >
+                  Contact form
+                </h3>
+                <form action="submit" id="contact_form" class="w-full">
+                  <div class="w-full lg:flex px-5 lg:px-8">
+                    <div class="flex w-full lg:w-1/2 h-full flex-col lg:mr-8">
+                      <label for="name" class="text-sm text-gray-700 mb-1"
+                        >Your name <span class="text-red-500">*</span></label
+                      ><input
+                        type="text"
+                        name="name"
+                        placeholder="eg. John Doe"
+                        class="rounded-lg border-gray-200"
+                        required
+                      />
+                      <label for="email" class="text-sm text-gray-700 mb-1 mt-4"
+                        >Your email <span class="text-red-500">*</span></label
+                      ><input
+                        type="email"
+                        name="email"
+                        placeholder="eg. you@example.com"
+                        class="rounded-lg border-gray-200"
+                        required
+                      />
+                      <label for="Phone" class="text-sm text-gray-700 mb-1 mt-4"
+                        >Your phone number</label
+                      ><input
+                        type="tel"
+                        name="contact"
+                        placeholder=""
+                        class="rounded-lg border-gray-200"
+                      />
+                    </div>
+                    <div class="w-full lg:w-1/2 flex flex-col mt-4 lg:mt-0">
+                      <label for="message" class="text-sm text-gray-700 mb-1"
+                        >Your Message <span class="text-red-500">*</span></label
+                      ><textarea
+                        name="message"
+                        id=""
+                        cols="30"
+                        rows="8"
+                        class="rounded-lg border-0 bg-gray-100"
+                        required
+                      ></textarea>
+                    </div>
                   </div>
-                  <div class="w-full lg:w-1/2 flex flex-col mt-4 lg:mt-0">
-                    <label for="message" class="text-sm text-gray-700 mb-1"
-                      >Your Message <span class="text-red-500">*</span></label
-                    ><textarea
-                      name="message"
-                      id=""
-                      cols="30"
-                      rows="8"
-                      class="rounded-lg border-0 bg-gray-100"
-                      required
-                    ></textarea>
+                  <div class="w-full flex justify-center">
+                    <button
+                      type="submit"
+                      class="w-full py-5 text-base font-medium text-white bg-green-500 hover:bg-green-600 hover:shadow-xl transition-all duration-200 mx-auto mt-8"
+                    >
+                      Submit
+                    </button>
                   </div>
-                </div>
-                <div class="w-full flex justify-center">
-                  <button
-                    type="submit"
-                    class="w-full py-5 text-base font-medium text-white bg-green-500 hover:bg-green-600 hover:shadow-xl transition-all duration-200 mx-auto mt-8"
-                  >
-                    Submit
-                  </button>
-                </div>
-              </form>
+                </form>
+              </div>
             </div>
           </div>
         </div>
