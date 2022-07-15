@@ -600,7 +600,15 @@
                 >
                   Contact form
                 </h3>
-                <form action="submit" id="contact_form" class="w-full">
+                <form
+                  action="submit"
+                  @submit.prevent="submitform()"
+                  id="contact_form"
+                  class="w-full"
+                  name="contact"
+                  method="POST"
+                  data-netlify="true"
+                >
                   <div class="w-full lg:flex px-5 lg:px-8">
                     <div class="flex w-full lg:w-1/2 h-full flex-col lg:mr-8">
                       <label for="name" class="text-sm text-gray-700 mb-1"
@@ -610,6 +618,7 @@
                         name="name"
                         placeholder="eg. John Doe"
                         class="rounded-lg border-gray-200"
+                        v-model="contact.name"
                         required
                       />
                       <label for="email" class="text-sm text-gray-700 mb-1 mt-4"
@@ -619,6 +628,7 @@
                         name="email"
                         placeholder="eg. you@example.com"
                         class="rounded-lg border-gray-200"
+                        v-model="contact.email"
                         required
                       />
                       <label for="Phone" class="text-sm text-gray-700 mb-1 mt-4"
@@ -628,6 +638,7 @@
                         name="contact"
                         placeholder=""
                         class="rounded-lg border-gray-200"
+                        v-model="contact.tel"
                       />
                     </div>
                     <div class="w-full lg:w-1/2 flex flex-col mt-4 lg:mt-0">
@@ -639,6 +650,7 @@
                         cols="30"
                         rows="8"
                         class="rounded-lg border-0 bg-gray-100"
+                        v-model="contact.message"
                         required
                       ></textarea>
                     </div>
@@ -694,7 +706,7 @@
                 </div>
                 <p class="text-xs font-normal text-slate-200 leading-5 max-w-md">
                   By clicking “Subscribe” you agree to allow driveGo Electric to send you
-information to you.
+                  information to you.
                 </p>
               </div>
             </div>
@@ -768,6 +780,7 @@ export default {
       modalContent: "",
       modalheader: "",
       modal: false,
+      contact: {},
     };
   },
   methods: {
@@ -775,6 +788,15 @@ export default {
       this.modalheader = x;
       this.modalContent = y;
       this.modal = true;
+    },
+    submitform: function () {
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: this.contact,
+      })
+        .then(() => console.log("Form successfully submitted"))
+        .catch((error) => alert(error));
     },
   },
 };
