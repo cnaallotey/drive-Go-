@@ -129,7 +129,7 @@
           <div class="max-w-screen-xl mx-auto">
             <div class="w-full grid grid-cols-3 lg:grid-cols-6 gap-x-20 gap-y-10">
               <div
-                class="w-full h-[15rem] lg:h-[30rem] col-span-3 lg:order-2 lg:rounded-3xl relative overflow-hidden hover:skew-y-2 transition-transform ease-linear duration-500"
+                class="w-full h-[15rem] lg:h-[30rem] col-span-3 lg:order-2 lg:rounded-3xl relative overflow-hidden transition-transform ease-linear duration-500"
               >
                 <img
                   src="../assets/carimg.png"
@@ -444,6 +444,7 @@
                 <button
                   @click="
                     showModal(
+                      ' Do electric cars break down more?',
                       ' No. EVs have fewer moving parts so they are less likely to break down.'
                     )
                   "
@@ -472,6 +473,7 @@
                 <button
                   @click="
                     showModal(
+                      ' Can you buy or sell second-hand electric cars?',
                       'Yes. You can buy and sell second-hand electric cars on AutoElectriq as well as brand new electric vehicles.'
                     )
                   "
@@ -500,6 +502,7 @@
                 <button
                   @click="
                     showModal(
+                      'How can my EV’s battery last?',
                       'Some batteries can deliver a promised range of 150,000 miles or upto10 years.'
                     )
                   "
@@ -528,6 +531,7 @@
                 <button
                   @click="
                     showModal(
+                      ' How long does it take to charge an EV battery?',
                       ' For Level 1 chargers it could take a day or overnight to charge fully depending on the battery and EV model. While it could take 6-12hours for Level 2 chargers, Level 3 chargers can gain 200 miles of range with about 15 to 20 minutes of charging.'
                     )
                   "
@@ -559,7 +563,7 @@
           <div
             class="max-w-scren-sm px-4 flex flex-col lg:flex-row lg:items-center justify-center lg:space-x-5"
           >
-            <img src="../assets/car.png" class="w-40" alt="" />
+            <img src="../assets/DRIVEGO1.jpg" class="w-40" alt="" />
             <p class="text-base lg:text-lg font-semibold leading-6">
               Can’t find what you are looking for? <br />
               Send us a message
@@ -668,10 +672,11 @@
                   Get notified when our products are launched!
                 </p>
                 <p class="text-base font-normal text-white leading-5 max-w-lg">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ab
-                  praesentium qui, maxime eos, cumque temporibus eius numquam ut veniam
-                  ratione earum dicta delectus porro sapiente tempore dolore! Hic,
-                  impedit!
+                  In this newsletter, we'll let you know about all the latest news on
+                  electric cars and green energy, as well as tips for how to go electric
+                  yourself. Plus, we'll keep you up-to-date on any offers that are
+                  available at your nearest Drive dealership! So what are you waiting for?
+                  Sign up today!
                 </p>
                 <div
                   class="w-full flex flex-col md:flex-row items-center space-y-2 md:space-y-0 lg:space-x-2 max-w-lg"
@@ -689,7 +694,8 @@
                   </button>
                 </div>
                 <p class="text-xs font-normal text-slate-200 leading-5 max-w-md">
-                  By clicking “Sebscribe” you accepting.
+                  By clicking “Subscribe” you accepting driveGo Electectric access to send
+                  information to you.
                 </p>
               </div>
             </div>
@@ -744,6 +750,7 @@
           <modal
             v-if="modal"
             :modalContent="modalContent"
+            :modalheader="modalheader"
             @closeModal="(n) => (modal = n)"
           />
         </footer>
@@ -760,12 +767,14 @@ export default {
   data() {
     return {
       modalContent: "",
+      modalheader: "",
       modal: false,
     };
   },
   methods: {
-    showModal: function (x) {
-      this.modalContent = x;
+    showModal: function (x, y) {
+      this.modalheader = x;
+      this.modalContent = y;
       this.modal = true;
     },
   },
