@@ -693,8 +693,8 @@
                   </button>
                 </div>
                 <p class="text-xs font-normal text-slate-200 leading-5 max-w-md">
-                  By clicking “Subscribe” you accepting driveGo Electectric access to send
-                  information to you.
+                  By clicking “Subscribe” you agree to allow driveGo Electric to send you
+information to you.
                 </p>
               </div>
             </div>
