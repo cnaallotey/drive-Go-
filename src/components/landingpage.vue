@@ -675,8 +675,7 @@
                   In this newsletter, we'll let you know about all the latest news on
                   electric cars and green energy, as well as tips for how to go electric
                   yourself. Plus, we'll keep you up-to-date on any offers that are
-                  available at you by us! So what are you waiting for?
-                  Sign up today!
+                  available at you by us! So what are you waiting for? Sign up today!
                 </p>
                 <div
                   class="w-full flex flex-col md:flex-row items-center space-y-2 md:space-y-0 lg:space-x-2 max-w-lg"
