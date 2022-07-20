@@ -6,5 +6,5 @@ import Landingpage from "./components/landingpage.vue";
 </script>
 
 <template>
-  <Landingpage />
+  <router-view></router-view>
 </template>
