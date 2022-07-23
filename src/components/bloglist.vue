@@ -1,18 +1,22 @@
 <script setup>
-import { onMounted } from "@vue/runtime-core";
+import { onMounted, ref } from "@vue/runtime-core";
 import axios from "axios";
 import Blogcard from "./blogcard.vue";
 //import axios from "../axios/axios.js";
+
+const blogs = ref([]);
 onMounted(() => {
   axios
-    .get("https://api.webflow.com/collections/62d71e6d98f17d9e418535ec/items", {
+    .get("http://localhost:3001/posts", {
       Headers: {
         "Content-Type": "application/json",
-        Authorization:
-          "Bearer 8d0c5bbf3bbbff65298a9ded42ca842a2cfaf48b0c1326445e25188b6bf22d49",
       },
     })
-    .then((res) => console.log(res))
+    .then((res) => {
+      console.log(res.data);
+      blogs.value = res.data.items;
+      console.log(blogs.value);
+    })
     .catch((err) => console.log(err));
 });
 </script>
@@ -25,10 +29,14 @@ onMounted(() => {
     <div
       class="max-w-screen-xl mt-10 mx-auto grid grid-cols-l lg:grid-cols-2 gap-10 lg:gap-20"
     >
-      <Blogcard />
-      <Blogcard />
-      <Blogcard />
-      <Blogcard />
+      <Blogcard
+        v-for="blog in blogs"
+        :key="blog.id"
+        :name="blog.name"
+        :summary="blog['post-summary']"
+        :image="blog['main-image']['url']"
+        :slug="blog['slug']"
+      />
     </div>
   </div>
 </template>

@@ -20,7 +20,7 @@ const router = createRouter(
                 path:'/blogs', name:'Blogs' , component:blogs
             },
             {
-                path:'/blog/{id}', name:'Blog', component:blog
+                path:'/blog/:id', name:'Blog', component:blog
             },
             {
                 path:"/:pathMatch(.*)", name:"404", component:home

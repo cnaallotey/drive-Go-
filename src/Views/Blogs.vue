@@ -6,7 +6,7 @@ import Foote from "../components/foote.vue";
 </script>
 
 <template>
-  <div class="bg-gray-900 w-screen h-screen overflow-y-scroll">
+  <div class="bg-slate-900 w-screen h-screen overflow-y-scroll">
     <Navbar /><Blogshero /><Bloglist /> <Foote />
   </div>
 </template>

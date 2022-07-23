@@ -2,7 +2,7 @@
   <div>
     <div class="w-full">
       <div class="w-full">
-        <div class="max-w-screen-2xl mx-auto bg-black relative z-10 overflow-hidden">
+        <div class="w-full bg-black relative z-10 overflow-hidden">
           <div class="w-full h-full absolute top-0 -z-10">
             <slide class="" />
           </div>
@@ -183,7 +183,8 @@
             </div>
           </div>
         </div>
-        <div class="w-full mt-20 lg:mt-32 bg-black py-40">
+        <bloghomepage class="mt-20 lg:mt-32" />
+        <div class="w-full bg-black py-40">
           <div class="max-w-screen-lg mx-auto">
             <div class="w-full grid grid-cols-1 md:grid-cols-1">
               <div class="w-full flex flex-col items-center">
@@ -239,6 +240,7 @@
             </div>
           </div>
         </div>
+
         <div class="w-full">
           <div class="max-w-screen-xl mx-auto mt-20 lg:mt-32 px-4">
             <div class="grid grid-cols-8 gap-10 overflow-hidden">
@@ -633,9 +635,10 @@
 import modal from "../components/modal.vue";
 import slide from "./slide.vue";
 import navbr from "../components/navbar.vue";
+import bloghomepage from "../components/bloghomepage.vue";
 import footeVue from "./foote.vue";
 export default {
-  components: { modal, slide, navbr, footeVue },
+  components: { modal, slide, navbr, footeVue, bloghomepage },
   data() {
     return {
       modalContent: "",
