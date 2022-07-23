@@ -92,7 +92,7 @@ export default {
   },
 
   mounted() {
-    axios.get(`http://localhost:3001/post/${this.$route.params.id}`).then((res) => {
+    axios.get(`/post/${this.$route.params.id}`).then((res) => {
       console.log(res.data);
       this.blog = res.data;
       this.image = res.data["main-image"]["url"];
