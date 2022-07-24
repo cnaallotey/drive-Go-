@@ -2,7 +2,7 @@
 
 <template>
   <div>
-    <footer class="w-full mt-20 lg:mt-32 bg-black">
+    <footer class="w-full bg-gray-900 border-t-8 border-green-700">
       <div class="grid grid-cols-5 gap-x-20 pt-32">
         <div class="w-full col-span-2">
           <img
@@ -91,7 +91,6 @@
           © 2022 DriveGo Electric, All rights reserved.
         </p>
       </div>
-      
     </footer>
   </div>
 </template>

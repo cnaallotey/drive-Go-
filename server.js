@@ -41,7 +41,7 @@ request(options, function (error, response, body) {
 
 app.get('/posts', (req, res) => {
     //listing blogs
-    console.log(blogs)
+    console.log('blogs')
     res.send(blogs);
 
 });

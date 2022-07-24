@@ -2,18 +2,105 @@
   <div>
     <div class="w-full">
       <div class="w-full">
-        <div class="w-full bg-black relative z-10 overflow-hidden">
+        <div
+          class="w-full bg-gray-900 relative z-10 overflow-hidden border-b-8 border-green-700"
+        >
           <div class="w-full h-full absolute top-0 -z-10">
             <slide class="" />
           </div>
-          <div class="w-full relative bg-opacity-80 bg-black">
+
+          <section
+            class="bg-gray-900 bg-opacity-90 dark:bg-gray-900 dark:bg-opacity-90 relative z-10"
+          >
             <navbr />
+            <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
+              <a
+                href="#"
+                class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700"
+                role="alert"
+              >
+                <span
+                  class="text-xs bg-green-600 rounded-full text-white px-4 py-1.5 mr-3"
+                  >New</span
+                >
+                <span class="text-sm font-medium"
+                  >DriveGo Electric is Launching! See what's new</span
+                >
+                <svg
+                  class="ml-2 w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </a>
+              <h1
+                class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white"
+              >
+                Promoting Access and Inclusion to EVs in Africa
+              </h1>
+              <p
+                class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400"
+              >
+                Drivego electric is a platform to promote the access and inclusion of
+                Electric Vechiles in Africa. The aim is to have a nationwide presence of
+                charging stations, second-hand electric vehicles and a peer-to-peer
+                marketplace for people to share their EVs.
+              </p>
+              <div
+                class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4"
+              >
+                <a
+                  href="/blogs"
+                  class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 dark:focus:ring-green-900"
+                >
+                  Read our Blogs
+                  <svg
+                    class="ml-2 -mr-1 w-5 h-5"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="mr-2 -ml-1 w-5 h-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M18 5v8a2 2 0 01-2 2h-5l-5 4v-4H4a2 2 0 01-2-2V5a2 2 0 012-2h12a2 2 0 012 2zM7 8H5v2h2V8zm2 0h2v2H9V8zm6 0h-2v2h2V8z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  Send a message
+                </a>
+              </div>
+            </div>
+          </section>
+          <div class="w-full relative bg-opacity-80 bg-gray-900 hidden">
             <!-- nav -->
 
             <!-- herosection -->
             <div class="w-full px-4">
               <div
-                class="max-w-screen-xl mx-auto py-20 lg:py-40 flex flex-col items-center relative"
+                class="max-w-screen-xl mx-auto py-20 lg:py-48 flex flex-col items-center relative"
               >
                 <h1
                   class="text-white px-4 text-4xl tracking-tight lg:text-6xl bg-opacity-100 font-extrabold text-center max-w-2xl"
@@ -184,7 +271,7 @@
           </div>
         </div>
         <bloghomepage class="mt-20 lg:mt-32" />
-        <div class="w-full bg-black py-40">
+        <div class="w-full bg-gray-900 py-40">
           <div class="max-w-screen-lg mx-auto">
             <div class="w-full grid grid-cols-1 md:grid-cols-1">
               <div class="w-full flex flex-col items-center">
@@ -244,7 +331,7 @@
         <div class="w-full">
           <div class="max-w-screen-xl mx-auto mt-20 lg:mt-32 px-4">
             <div class="grid grid-cols-8 gap-10 overflow-hidden">
-              <div class="col-span-8 bg-black relative overflow-hidden group">
+              <div class="col-span-8 bg-gray-900 relative overflow-hidden group">
                 <div
                   class="w-full h-full absolute top-0 scale-110 group-hover:scale-100 transition-all ease-linear duration-200"
                 >
@@ -254,7 +341,7 @@
                     alt=""
                   />
                 </div>
-                <div class="w-full relative z-10 bg-gradient-to-br from-black">
+                <div class="w-full relative z-10 bg-gradient-to-br from-gray-900">
                   <div class="space-y-5 py-20 lg:py-28 px-4 lg:px-10">
                     <p
                       class="text-3xl font-semibold text-white group-hover:text-green-500 transition-all ease-linear duration-200"
@@ -266,7 +353,7 @@
                       batteries
                     </p>
                     <button
-                      class="px-5 py-3 font-semibold text-sm text-white border group-hover:bg-white group-hover:text-black transition-colors ease-in-out duration-300 rounded-md flex w-fit items-center space-x-2 border-slate-200"
+                      class="px-5 py-3 font-semibold text-sm text-white border group-hover:bg-white group-hover:text-gray-900 transition-colors ease-in-out duration-300 rounded-md flex w-fit items-center space-x-2 border-slate-200"
                     >
                       <span>Join the Waitlist</span>
                       <span
@@ -287,7 +374,7 @@
                 </div>
               </div>
               <div
-                class="col-span-8 lg:col-span-4 relative lg:h-[40rem] bg-black group overflow-hidden"
+                class="col-span-8 lg:col-span-4 relative lg:h-[40rem] bg-gray-900 group overflow-hidden"
               >
                 <div class="w-full h-full absolute top-0 overflow-hidden">
                   <img
@@ -296,7 +383,7 @@
                     alt=""
                   />
                 </div>
-                <div class="w-full h-full relative z-10 bg-gradient-to-br from-black">
+                <div class="w-full h-full relative z-10 bg-gradient-to-br from-gray-900">
                   <div class="space-y-5 max-w-sm md:max-w-md py-20 px-4 lg:px-10">
                     <p
                       class="text-3xl font-semibold text-white group-hover:text-green-500 transition-all ease-linear duration-200"
@@ -308,7 +395,7 @@
                       enjoy insurance and service of your electric vehicle
                     </p>
                     <button
-                      class="px-5 py-3 font-semibold text-sm text-white border rounded-md flex w-fit group-hover:bg-white group-hover:text-black transition-colors ease-in-out duration-300 items-center space-x-2 border-slate-200"
+                      class="px-5 py-3 font-semibold text-sm text-white border rounded-md flex w-fit group-hover:bg-white group-hover:text-gray-900 transition-colors ease-in-out duration-300 items-center space-x-2 border-slate-200"
                     >
                       <span>Join the Waitlist</span>
                       <span
@@ -329,7 +416,7 @@
                 </div>
               </div>
               <div
-                class="col-span-8 lg:col-span-4 relative lg:h-[40rem] bg-black group overflow-hidden"
+                class="col-span-8 lg:col-span-4 relative lg:h-[40rem] bg-gray-900 group overflow-hidden"
               >
                 <div class="w-full h-full absolute top-0">
                   <img
@@ -338,7 +425,7 @@
                     alt=""
                   />
                 </div>
-                <div class="w-full h-full relative z-10 bg-gradient-to-br from-black">
+                <div class="w-full h-full relative z-10 bg-gradient-to-br from-gray-900">
                   <div class="space-y-5 w-fit lg:max-w-md py-20 px-4 lg:px-10">
                     <p
                       class="text-3xl font-semibold text-white group-hover:text-green-500 transition-all ease-linear duration-200"
@@ -350,7 +437,8 @@
                       Check for compatibility with your vehicle and pay to book on the go!
                     </p>
                     <button
-                      class="px-5 py-3 font-semibold text-sm text-white border rounded-md flex w-fit group-hover:bg-white group-hover:text-black transition-colors ease-in-out duration-300 items-center space-x-2 border-slate-200"
+                      @click="getblogs()"
+                      class="px-5 py-3 font-semibold text-sm text-white border rounded-md flex w-fit group-hover:bg-white group-hover:text-gray-900 transition-colors ease-in-out duration-300 items-center space-x-2 border-slate-200"
                     >
                       <span>Join the Waitlist</span>
                       <span
@@ -533,7 +621,7 @@
             </svg>
           </div>
         </div>
-        <div class="w-full bg-black mt-20 lg:mt-32 relative z-10">
+        <div class="w-full bg-gray-900 mt-20 lg:mt-32 relative z-10">
           <div class="w-full h-full -z-10 absolute inset-0">
             <img
               src="../assets/ev4.jpg"
@@ -541,7 +629,7 @@
               alt=""
             />
           </div>
-          <div class="w-full bg-black bg-opacity-80">
+          <div class="w-full bg-gray-900 bg-opacity-80">
             <div class="max-w-screen-md mx-auto px-4 py-20 lg:py-32">
               <div
                 class="w-full bg-white rounded-2xl shadow-lg pt-8 lg:pt-8 mt-5 overflow-hidden"
@@ -633,6 +721,7 @@
 
 <script>
 import modal from "../components/modal.vue";
+import axios from "axios";
 import slide from "./slide.vue";
 import navbr from "../components/navbar.vue";
 import bloghomepage from "../components/bloghomepage.vue";
@@ -645,7 +734,11 @@ export default {
       modalheader: "",
       modal: false,
       contact: {},
+      blogs: [],
     };
+  },
+  created() {
+    this.getblogs();
   },
   methods: {
     showModal: function (x, y) {
@@ -653,6 +746,7 @@ export default {
       this.modalContent = y;
       this.modal = true;
     },
+    getblogs: function () {},
     submitform: function () {
       fetch("/", {
         method: "POST",

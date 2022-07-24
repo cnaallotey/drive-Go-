@@ -92,8 +92,8 @@ export default {
   },
 
   mounted() {
-    axios.get(`/post/${this.$route.params.id}`).then((res) => {
-      console.log(res.data);
+    axios.get(`http://localhost:3001/post/${this.$route.params.id}`).then((res) => {
+      //console.log(res.data);
       this.blog = res.data;
       this.image = res.data["main-image"]["url"];
       this.date = res.data["created-on"].slice(0, 10);

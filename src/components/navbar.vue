@@ -10,7 +10,7 @@
               alt=""
           /></router-link>
 
-          <div class="w-fit">
+          <div class="w-fit hidden lg:block">
             <ul
               class="inline-flex space-x-6 items-center text-white text-sm font-semibold uppercase tracking-wide"
             >

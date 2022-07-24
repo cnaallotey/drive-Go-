@@ -2,9 +2,9 @@
   <div class="">
     <div class="flex justify-center h-full">
       <div
-        class="rounded-lg shadow-lg bg-white w-full overflow-hidden border-2 border-green-900"
+        class="rounded-lg shadow-lg bg-white w-full overflow-hidden border-4 border-gray-900"
       >
-        <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
+        <a :href="'/blog/' + slug" data-mdb-ripple="true" data-mdb-ripple-color="light">
           <img class="" :src="image" alt="" />
         </a>
         <div class="p-6">

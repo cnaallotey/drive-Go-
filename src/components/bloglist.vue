@@ -7,15 +7,15 @@ import Blogcard from "./blogcard.vue";
 const blogs = ref([]);
 onMounted(() => {
   axios
-    .get("/posts", {
+    .get("http://localhost:3001/posts", {
       Headers: {
         "Content-Type": "application/json",
       },
     })
     .then((res) => {
-      console.log(res.data);
+      //console.log(res.data);
       blogs.value = res.data.items;
-      console.log(blogs.value);
+      //console.log(blogs.value);
     })
     .catch((err) => console.log(err));
 });
@@ -23,11 +23,11 @@ onMounted(() => {
 
 <template>
   <div class="w-full mt-32">
-    <div class="max-w-screen-xl mx-auto border-b border-white border-opacity-10">
+    <div class="max-w-screen-xl mx-auto border-b border-white border-opacity-10 px-4">
       <p class="text-4xl font-semibold text-white mb-5">Recent Articles</p>
     </div>
     <div
-      class="max-w-screen-xl mt-10 mx-auto grid grid-cols-l lg:grid-cols-2 gap-10 lg:gap-20"
+      class="max-w-screen-xl mt-10 mx-auto grid grid-cols-l lg:grid-cols-2 gap-10 lg:gap-20 px-4"
     >
       <Blogcard
         v-for="blog in blogs"

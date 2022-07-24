@@ -5,9 +5,9 @@ import Foote from "../components/foote.vue";
 </script>
 
 <template>
-  <div class="bg-slate-900 w-full h-full overflow-y-scroll">
+  <div class="bg-gray-800 w-full h-full overflow-y-scroll">
     <div class="w-full">
-      <div class="max-w-screen-xl mx-auto"><Navbar /><Blogpage /></div>
+      <div class="max-w-screen-xl mx-auto pb-20"><Navbar /><Blogpage /></div>
       <Foote />
     </div>
   </div>
