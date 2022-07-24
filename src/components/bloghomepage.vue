@@ -90,7 +90,7 @@ import axios from "axios";
 
 const blogs = ref([]);
 onMounted(() => {
-  axios.get("http://localhost:3001/posts").then((res) => {
+  axios.get("/posts").then((res) => {
     blogs.value = res.data.items.slice(0, 2);
     console.log(blogs.value);
   });

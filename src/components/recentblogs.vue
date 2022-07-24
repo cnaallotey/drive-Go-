@@ -90,7 +90,7 @@ onMounted(() => {
   const route = useRoute();
   console.log(route.params.id);
   axios
-    .get(`http://localhost:3001/getrecentpost/${route.params.id}`)
+    .get(`/getrecentpost/${route.params.id}`)
     .then((res) => (recentblogs.value = res.data));
 });
 </script>

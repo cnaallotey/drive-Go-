@@ -7,7 +7,7 @@ import Blogcard from "./blogcard.vue";
 const blogs = ref([]);
 onMounted(() => {
   axios
-    .get("http://localhost:3001/posts", {
+    .get("/posts", {
       Headers: {
         "Content-Type": "application/json",
       },
