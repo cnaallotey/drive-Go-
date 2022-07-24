@@ -16,7 +16,7 @@
             <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
               <a
                 href="#"
-                class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700"
+                class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-white bg-gray-800 rounded-full dark:bg-gray-800 dark:text-white"
                 role="alert"
               >
                 <span
@@ -40,12 +40,12 @@
                 </svg>
               </a>
               <h1
-                class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white"
+                class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl dark:text-white"
               >
                 Promoting Access and Inclusion to EVs in Africa
               </h1>
               <p
-                class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400"
+                class="mb-8 text-lg font-normal text-gray-400 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400"
               >
                 Drivego electric is a platform to promote the access and inclusion of
                 Electric Vechiles in Africa. The aim is to have a nationwide presence of
@@ -75,7 +75,7 @@
                 </a>
                 <a
                   href="#"
-                  class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+                  class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-200 hover:text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

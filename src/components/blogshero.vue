@@ -23,7 +23,7 @@ import Navbar from "./navbar.vue";
         <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
           <a
             href="#"
-            class="inline-flex justify-between items-center py-1 px-1 mb-7 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700"
+            class="inline-flex justify-between items-center py-1 px-1 mb-7 text-sm text-white bg-gray-800 rounded-full dark:bg-gray-800 dark:text-white"
             role="alert"
           >
             <span class="text-xs bg-green-600 rounded-full text-white px-4 py-1.5 mr-3"
@@ -31,12 +31,12 @@ import Navbar from "./navbar.vue";
             >
           </a>
           <h1
-            class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white"
+            class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl dark:text-white"
           >
             Everything Electric Vehicles in Africa
           </h1>
           <p
-            class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400"
+            class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-300"
           >
             Get the latest news, trends, events, fun facts etc on EVs. Subscribe and get
             latest information at your finger tips.
