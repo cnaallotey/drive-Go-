@@ -47,10 +47,9 @@
               <p
                 class="mb-8 text-lg font-normal text-gray-400 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400"
               >
-                Drivego electric is a platform to promote the access and inclusion of
-                Electric Vechiles in Africa. The aim is to have a nationwide presence of
-                charging stations, second-hand electric vehicles and a peer-to-peer
-                marketplace for people to share their EVs.
+                DriveGo Electric is an all-in-one platform to buy electric vehicles from
+                vetted suppliers, secure flexible rent-to-own financing, insurance,
+                servicing and access EV barttery charging and swap stations.
               </p>
               <div
                 class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4"
@@ -59,7 +58,7 @@
                   href="/blogs"
                   class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 dark:focus:ring-green-900"
                 >
-                  Read our Blogs
+                  Read our Blog
                   <svg
                     class="ml-2 -mr-1 w-5 h-5"
                     fill="currentColor"
@@ -271,7 +270,7 @@
           </div>
         </div>
         <bloghomepage class="mt-20 lg:mt-32" />
-        <div class="w-full bg-gray-900 py-40">
+        <div class="w-full bg-gray-900 py-20">
           <div class="max-w-screen-lg mx-auto">
             <div class="w-full grid grid-cols-1 md:grid-cols-1">
               <div class="w-full flex flex-col items-center">

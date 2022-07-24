@@ -38,7 +38,9 @@
                 </svg>
                 Article
               </span>
-              <span class="text-sm">14 days ago</span>
+              <span class="text-sm">{{
+                moment(blog["created-on"]).format("MMM Do YY")
+              }}</span>
             </div>
             <h2
               class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
@@ -87,6 +89,7 @@
 import { ref } from "@vue/reactivity";
 import { onMounted } from "@vue/runtime-core";
 import axios from "axios";
+import moment from "moment";
 
 const blogs = ref([]);
 onMounted(() => {

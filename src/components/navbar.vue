@@ -14,7 +14,7 @@
             <ul
               class="inline-flex space-x-6 items-center text-white text-sm font-semibold uppercase tracking-wide"
             >
-              <li><router-link to="/blogs">blogs</router-link></li>
+              <li><router-link to="/blogs">blog</router-link></li>
             </ul>
           </div>
 

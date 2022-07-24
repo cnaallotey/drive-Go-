@@ -27,7 +27,7 @@ import Navbar from "./navbar.vue";
             role="alert"
           >
             <span class="text-xs bg-green-600 rounded-full text-white px-4 py-1.5 mr-3"
-              >Blogs</span
+              >Blog</span
             >
           </a>
           <h1
