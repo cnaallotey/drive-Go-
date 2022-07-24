@@ -2,7 +2,7 @@
   <div
     x-show="modalOpen"
     x-transition
-    class="bg-black bg-opacity-90 fixed top-0 left-0 w-full min-h-screen z-20 h-full flex items-center justify-center px-4 py-5"
+    class="bg-gray-900 bg-opacity-90 fixed top-0 left-0 w-full min-h-screen z-20 h-full flex items-center justify-center px-4 py-5"
   >
     <div
       class="w-full max-w-[570px] rounded-[20px] bg-white py-12 px-8 md:py-[60px] md:px-[70px] text-center"

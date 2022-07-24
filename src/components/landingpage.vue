@@ -73,8 +73,8 @@
                     ></path>
                   </svg>
                 </a>
-                <a
-                  href="#"
+                <button
+                  @click="scrolltocontact()"
                   class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-200 hover:text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
                 >
                   <svg
@@ -90,7 +90,7 @@
                     />
                   </svg>
                   Send a message
-                </a>
+                </button>
               </div>
             </div>
           </section>
@@ -629,7 +629,7 @@
               alt=""
             />
           </div>
-          <div class="w-full bg-gray-900 bg-opacity-80">
+          <div class="w-full bg-gray-900 bg-opacity-80" ref="contact">
             <div class="max-w-screen-md mx-auto px-4 py-20 lg:py-32">
               <div
                 class="w-full bg-white rounded-2xl shadow-lg pt-8 lg:pt-8 mt-5 overflow-hidden"
@@ -745,6 +745,10 @@ export default {
       this.modalheader = x;
       this.modalContent = y;
       this.modal = true;
+    },
+    scrolltocontact: function () {
+      const el = this.$refs.contact;
+      el.scrollIntoView({ behavior: "smooth" });
     },
     getblogs: function () {},
     submitform: function () {

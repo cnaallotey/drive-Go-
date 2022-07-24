@@ -1,21 +1,17 @@
 <template>
   <div>
-    <section class="bg-gray-900">
-      <div class="py-16 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-        <div class="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
+    <section class="bg-white dark:bg-gray-800">
+      <div class="py-8 mx-auto max-w-screen-xl lg:py-16">
+        <div class="w-full text-left lg:mb-10 mb-8">
           <h2
             class="mb-4 text-3xl lg:text-4xl tracking-tight font-semibold text-white dark:text-white"
           >
-            Our Blog
+            Recent Blog
           </h2>
-          <p class="font-light sm:text-xl text-gray-400 hidden">
-            We use an agile approach to test assumptions and connect with the needs of
-            your audience early and often.
-          </p>
         </div>
         <div class="grid gap-8 lg:grid-cols-2">
           <article
-            v-for="blog in blogs"
+            v-for="blog in recentblogs"
             :key="blog.id"
             class="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
           >
@@ -57,8 +53,8 @@
                 />
                 <span class="font-medium dark:text-white"> Bonnie Green </span>
               </div>
-              <router-link
-                :to="'/blog/' + blog.slug"
+              <a
+                :href="'/blog/' + blog.slug"
                 class="inline-flex items-center font-medium text-green-600 dark:text-green-500 hover:underline"
               >
                 Read more
@@ -74,7 +70,7 @@
                     clip-rule="evenodd"
                   ></path>
                 </svg>
-              </router-link>
+              </a>
             </div>
           </article>
         </div>
@@ -84,15 +80,17 @@
 </template>
 
 <script setup>
-import { ref } from "@vue/reactivity";
-import { onMounted } from "@vue/runtime-core";
+import { onMounted, ref } from "@vue/runtime-core";
+import { useRoute } from "vue-router";
 import axios from "axios";
 
-const blogs = ref([]);
+const recentblogs = ref([]);
+
 onMounted(() => {
-  axios.get("http://localhost:3001/posts").then((res) => {
-    blogs.value = res.data.items.slice(0, 2);
-    console.log(blogs.value);
-  });
+  const route = useRoute();
+  console.log(route.params.id);
+  axios
+    .get(`http://localhost:3001/getrecentpost/${route.params.id}`)
+    .then((res) => (recentblogs.value = res.data));
 });
 </script>

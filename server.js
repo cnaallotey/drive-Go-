@@ -39,6 +39,7 @@ request(options, function (error, response, body) {
 
 
 
+/* This is a route that is used to get all the posts from the webflow api. */
 app.get('/posts', (req, res) => {
     //listing blogs
     console.log('blogs')
@@ -47,8 +48,10 @@ app.get('/posts', (req, res) => {
 });
 
 
+/* The above code is getting the blogId from the URL and then using that to find the index of the blog
+in the JSON file. */
 app.get('/post/:blogId', (req, res)=>{
-  console.log(req.params.blogId)
+  //console.log(req.params.blogId)
   var blogid = req.params.blogId 
   useblog = JSON.parse(blogs)
 
@@ -72,6 +75,24 @@ if (!isFound) {
 
 })
 
+
+app.get('/getrecentpost/:blogId', (req, res )=>{
+  const blogSlug = req.params.blogId;
+  var recentBlogs= []
+
+  request(options, function (error, response, body) {
+    if (error) throw new Error(error);
+  
+    //console.log(body);
+    recentBlogs= (JSON.parse(body)).items.filter(id => id.slug != blogSlug).slice(0,2)
+    res.send(recentBlogs)
+  });
+
+  
+  //const recentBlogs = blogs.items.filter((id)=> id.slug != blogSlug)
+  //console.log(JSON.parse(recentBlogs))
+  
+})
 
 //this.course = this.$route.params.id;
 
