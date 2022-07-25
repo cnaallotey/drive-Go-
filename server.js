@@ -42,7 +42,7 @@ request(options, function (error, response, body) {
 /* This is a route that is used to get all the posts from the webflow api. */
 app.get('/posts', (req, res) => {
     //listing blogs
-    console.log('blogs')
+    //console.log('blogs')
     res.send(blogs);
 
 });
@@ -56,7 +56,7 @@ app.get('/post/:blogId', (req, res)=>{
   useblog = JSON.parse(blogs)
 
 const index = useblog.items.findIndex(car => car.slug == blogid)
-console.log(index)
+//console.log(index)
 
   const isFound = useblog.items.some((element) => {
     if (element.slug === blogid) {

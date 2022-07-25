@@ -33,7 +33,7 @@ const onSlideChange = () => {
       <swiper-slide
         ><div class="w-full h-full">
           <img
-            src="../assets/ev4.jpg"
+            src="https://images.unsplash.com/photo-1614186462449-59c66ace62c8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1073&q=100"
             class="object-center object-cover h-full w-full"
             alt=""
           /></div
@@ -41,7 +41,7 @@ const onSlideChange = () => {
       <swiper-slide
         ><div class="w-full h-full">
           <img
-            src="https://images.unsplash.com/photo-1593941707874-ef25b8b4a92b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80"
+            src="https://images.unsplash.com/photo-1593941707874-ef25b8b4a92b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=100"
             class="object-center object-cover h-full w-full"
             alt=""
           /></div

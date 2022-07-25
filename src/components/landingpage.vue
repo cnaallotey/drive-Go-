@@ -10,7 +10,7 @@
           </div>
 
           <section
-            class="bg-gray-900 bg-opacity-90 dark:bg-gray-900 dark:bg-opacity-90 relative z-10"
+            class="bg-gray-900 bg-opacity-80 dark:bg-gray-900 dark:bg-opacity-80 relative z-10"
           >
             <navbr />
             <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
@@ -335,7 +335,7 @@
                   class="w-full h-full absolute top-0 scale-110 group-hover:scale-100 transition-all ease-linear duration-200"
                 >
                   <img
-                    src="../assets/evinterior.jpg"
+                    src="https://images.unsplash.com/photo-1625998259975-b243bf480751?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=100"
                     class="w-full h-full object-cover object-center"
                     alt=""
                   />
@@ -419,7 +419,7 @@
               >
                 <div class="w-full h-full absolute top-0">
                   <img
-                    src="../assets/batteryharging.jpg"
+                    src="https://images.unsplash.com/photo-1635451048957-3beb7175f57f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=100"
                     class="w-full h-full object-cover scale-110 group-hover:scale-100 transition-all ease-linear duration-200 object-center"
                     alt=""
                   />
