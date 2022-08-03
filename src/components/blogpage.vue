@@ -98,6 +98,7 @@ export default {
       this.blog = res.data;
       this.image = res.data["main-image"]["url"];
       this.date = moment(res.data["created-on"]).format("MMMM Do YYYY, h:mm:ss a");
+      document.title = res.data.name;
     });
   },
   filters: {

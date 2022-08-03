@@ -41,6 +41,12 @@ request(options, function (error, response, body) {
 
 /* This is a route that is used to get all the posts from the webflow api. */
 app.get('/posts', (req, res) => {
+  request(options, function (error, response, body) {
+    if (error) throw new Error(error);
+  
+    //console.log(body);
+    blogs=body
+  });
     //listing blogs
     //console.log('blogs')
     res.send(blogs);

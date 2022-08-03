@@ -3,6 +3,11 @@ import Navbar from "../components/navbar.vue";
 import Blogshero from "../components/blogshero.vue";
 import Bloglist from "../components/bloglist.vue";
 import Foote from "../components/foote.vue";
+import { onMounted } from "@vue/runtime-core";
+
+onMounted(() => {
+  document.title = "Blogs";
+});
 </script>
 
 <template>
