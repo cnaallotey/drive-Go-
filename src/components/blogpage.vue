@@ -47,10 +47,21 @@
       <div class="w-full h-[600px] bg-black overflow-hidden">
         <img :src="image" class="w-full h-full object-cover object-center" alt="" />
       </div>
+      <p
+        class="font-normal text-xs text-gray-300 italic pl-3 border-l-2 border-gray-300 mt-1"
+      >
+        {{ blog["image-caption"] }}
+      </p>
 
       <h2 class="text-4xl font-semibold text-green-500 mt-5">{{ blog.name }}</h2>
       <div class="flex items-center space-x-3 mt-5">
-        <div class="w-12 h-12 rounded-full bg-white"></div>
+        <div class="w-12 h-12 rounded-full bg-white">
+          <img
+            :src="blog['author-image']"
+            class="w-full h-full object-cover object-center"
+            alt=""
+          />
+        </div>
         <div>
           <p class="text-white text-sm font-semibold leading-5">DriveGo Electric</p>
           <p class="text-gray-200 text-sm font-normal">Written : {{ date }}</p>

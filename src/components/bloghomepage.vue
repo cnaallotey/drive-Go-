@@ -13,7 +13,7 @@
             your audience early and often.
           </p>
         </div>
-        <div class="grid gap-8 lg:grid-cols-2">
+        <div class="grid gap-8 lg:grid-cols-2 dark">
           <article
             v-for="blog in blogs"
             :key="blog.id"
@@ -36,7 +36,7 @@
                   ></path>
                   <path d="M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V7z"></path>
                 </svg>
-                Article
+                {{ blog.category }}
               </span>
               <span class="text-sm">{{
                 moment(blog["created-on"]).format("MMM Do YY")
@@ -54,10 +54,10 @@
               <div class="flex items-center space-x-4">
                 <img
                   class="w-7 h-7 rounded-full"
-                  src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png"
+                  src="../assets/logoev.png"
                   alt="Bonnie Green avatar"
                 />
-                <span class="font-medium dark:text-white"> Bonnie Green </span>
+                <span class="font-medium dark:text-white"> Drive-Go </span>
               </div>
               <router-link
                 :to="'/blog/' + blog.slug"

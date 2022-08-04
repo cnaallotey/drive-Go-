@@ -22,7 +22,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="w-full mt-32">
+  <div class="w-full mt-10 md:mt-16 lg:mt-24">
     <div class="max-w-screen-xl mx-auto border-b border-white border-opacity-10 px-4">
       <p class="text-4xl font-semibold text-white mb-5">Recent Articles</p>
     </div>
@@ -36,6 +36,8 @@ onMounted(() => {
         :summary="blog['post-summary']"
         :image="blog['main-image']['url']"
         :slug="blog['slug']"
+        :tags="blog.tag.split(',')"
+        :category="blog.category"
       />
     </div>
   </div>

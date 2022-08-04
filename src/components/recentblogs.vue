@@ -1,7 +1,7 @@
 <template>
   <div>
     <section class="bg-gray-800 dark:bg-gray-800">
-      <div class="py-8 mx-auto max-w-screen-xl lg:py-16">
+      <div class="py-8 mx-auto max-w-screen-xl lg:py-16 px-4">
         <div class="w-full text-left lg:mb-10 mb-8">
           <h2
             class="mb-4 text-3xl lg:text-4xl tracking-tight font-semibold text-white dark:text-white"
@@ -32,9 +32,11 @@
                   ></path>
                   <path d="M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V7z"></path>
                 </svg>
-                Article
+                {{ blog.category }}
               </span>
-              <span class="text-sm">14 days ago</span>
+              <span class="text-sm">{{
+                moment(blog["created-on"]).format("MMM Do YY")
+              }}</span>
             </div>
             <h2
               class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
@@ -48,10 +50,10 @@
               <div class="flex items-center space-x-4">
                 <img
                   class="w-7 h-7 rounded-full"
-                  src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png"
+                  src="../assets/logoev.png"
                   alt="Bonnie Green avatar"
                 />
-                <span class="font-medium dark:text-white"> Bonnie Green </span>
+                <span class="font-medium dark:text-white"> DriveGo Electrtic </span>
               </div>
               <a
                 :href="'/blog/' + blog.slug"
@@ -83,6 +85,7 @@
 import { onMounted, ref } from "@vue/runtime-core";
 import { useRoute } from "vue-router";
 import axios from "axios";
+import moment from "moment";
 
 const recentblogs = ref([]);
 
