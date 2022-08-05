@@ -44,20 +44,13 @@
           </li>
         </ol>
       </nav>
-      <div class="w-full h-[600px] bg-black overflow-hidden">
-        <img :src="image" class="w-full h-full object-cover object-center" alt="" />
-      </div>
-      <p
-        class="font-normal text-xs text-gray-300 italic pl-3 border-l-2 border-gray-300 mt-1"
+      <h2 class="text-4xl font-semibold text-green-500 mt-4">{{ blog.name }}</h2>
+      <div
+        class="flex items-center space-x-3 mt-5 w-full mx-0 border-b border-slate-200 border-opacity-30 pb-3"
       >
-        {{ blog["image-caption"] }}
-      </p>
-
-      <h2 class="text-4xl font-semibold text-green-500 mt-5">{{ blog.name }}</h2>
-      <div class="flex items-center space-x-3 mt-5">
-        <div class="w-12 h-12 rounded-full bg-white">
+        <div class="w-12 h-12 rounded-full bg-white overflow-hidden">
           <img
-            :src="blog['author-image']"
+            :src="blog['author-image'] ? blog['author-image'] : '/logoev.png'"
             class="w-full h-full object-cover object-center"
             alt=""
           />
@@ -67,7 +60,21 @@
           <p class="text-gray-200 text-sm font-normal">Written : {{ date }}</p>
         </div>
       </div>
-      <div class="w-full grid grid-cols-3 lg:grid-cols-5 gap-10 mt-10 lg:mt-12">
+      <div class="max-w-screen-md mx-auto mt-5">
+        <p class="text-base font-normal text-gray-200 leading-5">
+          {{ blog["post-summary"] }}
+        </p>
+        <div class="w-full h-[400px] bg-black overflow-hidden mt-5">
+          <img :src="image" class="w-full h-full object-cover object-center" alt="" />
+        </div>
+        <p
+          class="font-normal text-xs text-gray-300 italic pl-3 border-l-2 border-gray-300 mt-1"
+        >
+          {{ blog["image-caption"] }}
+        </p>
+      </div>
+
+      <div class="max-w-screen-md mx-auto mt-5">
         <div
           class="text-gray-200 text-lg space-y-4 col-span-3 blog"
           id="blog"
@@ -76,13 +83,22 @@
         <div class="col-span-3 lg:col-span-2 h-full">
           <div class="w-full h-full relative">
             <div
-              class="w-fit rounded-2xl bg-opacity-75 p-5 bg-white sticky top-0 flex items-center space-x-3"
+              class="w-fit mx-auto rounded-2xl bg-opacity-100 p-5 px-10 bg-white sticky top-0 flex flex-col items-center space-y-3"
             >
-              <p class="text-gray-900 font-medium text-sm">Share on:</p>
-              <a href="#"
-                ><img src="../assets/facebook.png" class="w-10 h-10" alt=""
-              /></a>
-              <a href="#"><img src="../assets/twitter.svg" class="w-10 h-10" alt="" /></a>
+              <p class="text-gray-900 font-medium text-sm">
+                Please, Don't forget to share!
+              </p>
+              <div class="w-fit flex space-x-4">
+                <a
+                  v-for="sociallink in sociallinks"
+                  :key="sociallink"
+                  :href="sociallink.link"
+                  ><img
+                    :src="'/images/' + sociallink.icon"
+                    class="w-10 h-10"
+                    :alt="sociallink.name"
+                /></a>
+              </div>
             </div>
           </div>
         </div>
@@ -100,6 +116,20 @@ export default {
       blog: [],
       image: "",
       date: "",
+      sociallinks: [
+        {
+          name: "facebook",
+          link: `https://www.facebook.com/dialog/send?app_id=140586622674265&link=${window.location.href}&redirect_uri=${window.location.href}`,
+          icon: "facebook2.svg",
+        },
+        { name: "twitter", link: "#", icon: "twitt.svg" },
+        { name: "whatsapp", link: "#", icon: "whatsapp2.svg" },
+        {
+          name: "linkedin",
+          link: `https://www.linkedin.com/sharing/share-offsite/?url=${window.location.href}`,
+          icon: "linkedin2.svg",
+        },
+      ],
     };
   },
 
