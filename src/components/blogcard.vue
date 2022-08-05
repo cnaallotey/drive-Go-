@@ -1,9 +1,9 @@
 <template>
   <div class="">
     <div class="w-full px-4 mb-8">
-      <div class="w-full h-[300px] overflow-hidden rounded-[16px] mb-6">
-        <a class="w-full h-full object-cover object-top" href="#">
-          <img class="w-full" :src="image" alt="" />
+      <div class="w-full h-[150px] lg:h-[300px] overflow-hidden rounded-[16px] mb-6">
+        <a class="" href="#">
+          <img class="w-full h-full object-cover object-top" :src="image" alt="" />
         </a>
       </div>
 
@@ -25,7 +25,7 @@
       <p class="mb-4 text-base md:text-lg text-slate-100 font-medium">
         {{ summary }}
       </p>
-      <div class="w-fit flex space-x-2 items-center mb-4">
+      <div class="w-fit space-x-2 items-center mb-4 flex-wrap hidden">
         <p class="text-sm font-medium text-slate-500 uppercase">TOPIC:</p>
         <p
           class="text-slate-700 text-sm italic py-1 px-2 bg-slate-200"

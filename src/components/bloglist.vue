@@ -26,7 +26,7 @@ onMounted(() => {
     <div class="max-w-screen-xl mx-auto border-b border-white border-opacity-10 px-4">
       <p class="text-4xl font-semibold text-white mb-5">Recent Articles</p>
     </div>
-    <ul class="flex flex-wrap mb-8 -mx-2 text-center justify-center mt-5">
+    <ul class="md:flex flex-wrap mb-8 -mx-2 text-center justify-center mt-5 hidden">
       <li class="w-full md:w-auto px-2">
         <a
           class="inline-block w-full py-2 px-4 mb-4 md:mb-0 text-sm text-slate-200 hover:text-green-500 hover:bg-slate-900 font-bold rounded-md hover:shadow-sm"
@@ -64,7 +64,7 @@ onMounted(() => {
       </li>
     </ul>
     <div
-      class="max-w-screen-xl mt-10 mx-auto grid grid-cols-l lg:grid-cols-2 gap-10 lg:gap-20 px-4"
+      class="max-w-screen-xl mt-10 mx-auto grid grid-cols-l lg:grid-cols-2 gap-8 md:gap-10 lg:gap-20 px-4"
     >
       <Blogcard
         v-for="blog in blogs"
