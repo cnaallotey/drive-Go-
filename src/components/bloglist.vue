@@ -65,7 +65,6 @@ onMounted(() => {
     <div
       class="max-w-screen-xl mt-10 mx-auto grid grid-cols-l lg:grid-cols-2 gap-8 md:gap-10 lg:gap-20 px-4"
     >
-      // A component that is being used to display the data.
       <Blogcard
         v-for="blog in filtercard"
         :key="blog.id"
