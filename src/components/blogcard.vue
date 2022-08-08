@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    <div class="w-full px-4 mb-8">
+    <div class="w-full md:px-4 mb-8">
       <div class="w-full h-[150px] lg:h-[300px] overflow-hidden rounded-[16px] mb-6">
         <a class="" href="#">
           <img class="w-full h-full object-cover object-top" :src="image" alt="" />

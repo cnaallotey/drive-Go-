@@ -1,9 +1,24 @@
 <script setup>
-import { onMounted, ref } from "@vue/runtime-core";
+import { computed, onMounted, ref } from "@vue/runtime-core";
 import axios from "axios";
 import Blogcard from "./blogcard.vue";
 //import axios from "../axios/axios.js";
 
+const categories = ref([]);
+
+var val = ref("");
+
+// Filtering the blogs array based on the value of the val variable.
+const filtercard = computed(() => {
+  return blogs.value.filter((element) => element.category.match(val.value));
+});
+
+// A function that is called when a button is clicked. It changes the value of the `val` variable.
+const changeval = (x) => {
+  val.value = x;
+};
+
+// Fetching data from the API and storing it in the `blogs` variable.
 const blogs = ref([]);
 onMounted(() => {
   axios
@@ -13,9 +28,12 @@ onMounted(() => {
       },
     })
     .then((res) => {
-      //console.log(res.data);
       blogs.value = res.data.items;
-      //console.log(blogs.value);
+      res.data.items.forEach((element) => {
+        if (!categories.value.includes(element.category)) {
+          categories.value.push(element.category);
+        }
+      });
     })
     .catch((err) => console.log(err));
 });
@@ -28,46 +46,28 @@ onMounted(() => {
     </div>
     <ul class="md:flex flex-wrap mb-8 -mx-2 text-center justify-center mt-5 hidden">
       <li class="w-full md:w-auto px-2">
-        <a
-          class="inline-block w-full py-2 px-4 mb-4 md:mb-0 text-sm text-slate-200 hover:text-green-500 hover:bg-slate-900 font-bold rounded-md hover:shadow-sm"
-          href="#"
-          >All Categories</a
+        <button
+          class="inline-block w-full py-2 px-4 mb-4 md:mb-0 text-sm text-slate-200 hover:text-green-500 hover:bg-slate-900 font-bold rounded-md hover:shadow-sm cursor-pointer"
+          @click="changeval('')"
         >
+          All Categories
+        </button>
       </li>
-      <li class="w-full md:w-auto px-2">
-        <a
-          class="inline-block w-full py-2 px-4 mb-4 md:mb-0 text-sm text-slate-200 hover:text-green-500 hover:bg-slate-900 font-bold rounded-md hover:shadow-sm"
-          href="#"
-          >Technology</a
+      <li class="w-full md:w-auto px-2" v-for="category in categories" :key="category">
+        <button
+          class="inline-block w-full py-2 px-4 mb-4 md:mb-0 text-sm text-slate-200 hover:text-green-500 hover:bg-slate-900 font-bold rounded-md hover:shadow-sm cursor-pointer"
+          @click="changeval(category)"
         >
-      </li>
-      <li class="w-full md:w-auto px-2">
-        <a
-          class="inline-block w-full py-2 px-4 mb-4 md:mb-0 text-sm text-slate-200 hover:text-green-500 hover:bg-slate-900 font-bold rounded-md hover:shadow-sm"
-          href="#"
-          >Development</a
-        >
-      </li>
-      <li class="w-full md:w-auto px-2">
-        <a
-          class="inline-block w-full py-2 px-4 mb-4 md:mb-0 text-sm text-slate-200 hover:text-green-500 hover:bg-slate-900 font-bold rounded-md hover:shadow-sm"
-          href="#"
-          >Marketing</a
-        >
-      </li>
-      <li class="w-full md:w-auto px-2">
-        <a
-          class="inline-block w-full py-2 px-4 text-sm text-slate-200 hover:text-green-500 hover:bg-slate-900 font-bold rounded-md hover:shadow-sm"
-          href="#"
-          >Start-up</a
-        >
+          {{ category }}
+        </button>
       </li>
     </ul>
     <div
       class="max-w-screen-xl mt-10 mx-auto grid grid-cols-l lg:grid-cols-2 gap-8 md:gap-10 lg:gap-20 px-4"
     >
+      // A component that is being used to display the data.
       <Blogcard
-        v-for="blog in blogs"
+        v-for="blog in filtercard"
         :key="blog.id"
         :name="blog.name"
         :summary="blog['post-summary']"
