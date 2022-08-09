@@ -45,7 +45,7 @@ onMounted(() => {
     <div class="max-w-screen-xl mx-auto border-b border-gray-300 border-opacity-50 px-4">
       <p class="text-4xl font-semibold text-slate-900 mb-5">Recent Articles</p>
     </div>
-    <div class="md:hidden px-4">
+    <div class="md:hidden px-4 mt-5">
       <label for="tabs" class="sr-only">Select a tab</label>
       <!-- Use an "onChange" listener to redirect the user to the selected tab URL. -->
       <select
