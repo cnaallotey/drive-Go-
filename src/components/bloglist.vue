@@ -1,6 +1,7 @@
 <script setup>
 import { computed, onMounted, ref } from "@vue/runtime-core";
 import axios from "axios";
+
 import Blogcard from "./blogcard.vue";
 //import axios from "../axios/axios.js";
 
@@ -40,23 +41,42 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="w-full mt-10 md:mt-16 lg:mt-24">
-    <div class="max-w-screen-xl mx-auto border-b border-white border-opacity-10 px-4">
-      <p class="text-4xl font-semibold text-white mb-5">Recent Articles</p>
+  <div class="w-full mt-10 md:mt-16 lg:mt-16">
+    <div class="max-w-screen-xl mx-auto border-b border-gray-300 border-opacity-50 px-4">
+      <p class="text-4xl font-semibold text-slate-900 mb-5">Recent Articles</p>
+    </div>
+    <div class="md:hidden px-4">
+      <label for="tabs" class="sr-only">Select a tab</label>
+      <!-- Use an "onChange" listener to redirect the user to the selected tab URL. -->
+      <select
+        id="tabs"
+        name="tabs"
+        class="block w-full focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+        v-model="val"
+        @change="changeval(val)"
+      >
+        <option value="" default>All Categories</option>
+
+        <option v-for="category in categories" :key="category" :value="category">
+          {{ category }}
+        </option>
+      </select>
     </div>
     <ul class="md:flex flex-wrap mb-8 -mx-2 text-center justify-center mt-5 hidden">
       <li class="w-full md:w-auto px-2">
         <button
-          class="inline-block w-full py-2 px-4 mb-4 md:mb-0 text-sm text-slate-200 hover:text-green-500 hover:bg-slate-900 font-bold rounded-md hover:shadow-sm cursor-pointer"
+          class="inline-block w-full py-2 px-4 mb-4 md:mb-0 text-sm text-slate-700 hover:text-green-500 hover:bg-slate-200 font-bold rounded-md hover:shadow-sm cursor-pointer"
           @click="changeval('')"
+          :class="val == '' ? 'bg-green-500 text-white' : ''"
         >
           All Categories
         </button>
       </li>
       <li class="w-full md:w-auto px-2" v-for="category in categories" :key="category">
         <button
-          class="inline-block w-full py-2 px-4 mb-4 md:mb-0 text-sm text-slate-200 hover:text-green-500 hover:bg-slate-900 font-bold rounded-md hover:shadow-sm cursor-pointer"
+          class="inline-block w-full py-2 px-4 mb-4 md:mb-0 text-sm text-slate-700 hover:text-green-500 hover:bg-slate-200 font-bold rounded-md hover:shadow-sm cursor-pointer"
           @click="changeval(category)"
+          :class="val == category ? 'bg-green-500 text-white' : ''"
         >
           {{ category }}
         </button>

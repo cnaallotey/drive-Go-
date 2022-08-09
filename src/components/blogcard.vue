@@ -1,7 +1,7 @@
 <template>
   <div class="">
     <div class="w-full md:px-4 mb-8">
-      <div class="w-full h-[150px] lg:h-[300px] overflow-hidden rounded-[16px] mb-6">
+      <div class="w-full h-[150px] lg:h-[300px] overflow-hidden rounded-[8px] mb-6">
         <a class="" href="#">
           <img class="w-full h-full object-cover object-top" :src="image" alt="" />
         </a>
@@ -9,20 +9,20 @@
 
       <div class="mb-4">
         <a
-          class="inline-block py-1 px-3 text-xs leading-5 text-green-500 hover:text-green-600 font-medium uppercase bg-green-100 hover:bg-green-200 rounded-full shadow-sm"
+          class="inline-block py-1 px-3 text-xs leading-5 text-green-500 hover:text-green-600 font-medium uppercase bg-green-100 hover:bg-green-200 rounded-md shadow-sm"
           href="#"
           >{{ category }}</a
         >
       </div>
-      <p class="mb-2 text-slate-100 font-medium">
+      <p class="mb-2 text-slate-700 font-medium">
         DriveGo Electric &bull; {{ datechange }}
       </p>
-      <a
-        class="inline-block mb-4 text-2xl leading-tight text-white hover:text-white font-bold hover:underline"
-        href="#"
-        >{{ name }}.</a
+      <router-link
+        class="inline-block mb-4 text-2xl leading-tight text-slate-900 hover:text-emerald-700 font-bold hover:underline"
+        :to="'/blog/' + slug"
+        >{{ name }}.</router-link
       >
-      <p class="mb-4 text-base md:text-lg text-slate-100 font-medium">
+      <p class="mb-4 text-base md:text-lg text-slate-700 font-normal">
         {{ summary }}
       </p>
       <div class="w-fit space-x-2 items-center mb-4 flex-wrap hidden">

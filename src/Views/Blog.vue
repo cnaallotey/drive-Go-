@@ -6,11 +6,10 @@ import Recentblogs from "../components/recentblogs.vue";
 </script>
 
 <template>
-  <div class="bg-gray-800 w-full h-full overflow-y-scroll">
+  <div class="bg-white w-full h-full overflow-y-scroll">
     <div class="w-full">
-      <div class="max-w-screen-xl mx-auto pb-20">
-        <Navbar /><Blogpage /><Recentblogs />
-      </div>
+      <div class="bg-slate-900"><Navbar /></div>
+      <div class="max-w-screen-xl mx-auto pb-20"><Blogpage /><Recentblogs /></div>
       <Foote />
     </div>
   </div>

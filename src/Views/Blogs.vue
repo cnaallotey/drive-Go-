@@ -11,7 +11,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="bg-gray-800 w-screen h-screen overflow-y-scroll">
+  <div class="bg-white w-screen h-screen overflow-y-scroll">
     <Blogshero /><Bloglist /> <Foote class="mt-32" />
   </div>
 </template>

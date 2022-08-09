@@ -1,10 +1,10 @@
 <template>
   <div>
-    <section class="bg-gray-800 dark:bg-gray-800">
+    <section class="dark:bg-gray-800">
       <div class="py-8 mx-auto max-w-screen-xl lg:py-16 px-4">
         <div class="w-full text-left lg:mb-10 mb-8">
           <h2
-            class="mb-4 text-3xl lg:text-4xl tracking-tight font-semibold text-white dark:text-white"
+            class="mb-4 text-3xl lg:text-4xl tracking-tight font-semibold text-slate-900 dark:text-white"
           >
             Recent Articles
           </h2>

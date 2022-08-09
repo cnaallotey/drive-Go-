@@ -13,7 +13,7 @@
             your audience early and often.
           </p>
         </div>
-        <div class="grid gap-8 lg:grid-cols-2 dark">
+        <div class="grid gap-8 lg:grid-cols-2">
           <article
             v-for="blog in blogs"
             :key="blog.id"

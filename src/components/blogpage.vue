@@ -1,12 +1,13 @@
 <template>
   <div>
+    <div class="bg-slate-900"></div>
     <div class="w-full max-w-screen-xl px-4 mx-auto mt-10 lg:mt-10">
       <nav class="flex mb-5" aria-label="Breadcrumb">
         <ol class="inline-flex items-center space-x-1 md:space-x-3">
           <li class="inline-flex items-center">
             <router-link
               to="/blogs"
-              class="inline-flex items-center text-sm font-medium text-gray-300 hover:text-gray-200"
+              class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-900"
             >
               <svg
                 class="w-4 h-4 mr-2"
@@ -25,7 +26,7 @@
           <li aria-current="page">
             <div class="flex items-center">
               <svg
-                class="w-6 h-6 text-gray-300"
+                class="w-6 h-6 text-gray-500"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -37,7 +38,7 @@
                 ></path>
               </svg>
               <span
-                class="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400"
+                class="ml-1 text-sm font-medium text-gray-700 md:ml-2 dark:text-gray-400"
                 >{{ blog.name }}</span
               >
             </div>
@@ -46,9 +47,9 @@
       </nav>
       <h2 class="text-4xl font-semibold text-green-500 mt-4">{{ blog.name }}</h2>
       <div
-        class="flex items-center space-x-3 mt-5 w-full mx-0 border-b border-slate-200 border-opacity-30 pb-3"
+        class="flex items-center space-x-3 mt-5 w-full mx-0 border-b border-slate-200 border-opacity-50 pb-3"
       >
-        <div class="w-12 h-12 rounded-full bg-white overflow-hidden">
+        <div class="w-12 h-12 rounded-full bg-gray-900 overflow-hidden">
           <img
             :src="blog['author-image'] ? blog['author-image'] : '/logoev.png'"
             class="w-full h-full object-cover object-center"
@@ -56,19 +57,19 @@
           />
         </div>
         <div>
-          <p class="text-white text-sm font-semibold leading-5">DriveGo Electric</p>
-          <p class="text-gray-200 text-sm font-normal">Written : {{ date }}</p>
+          <p class="text-gray-900 text-sm font-semibold leading-5">DriveGo Electric</p>
+          <p class="text-gray-700 text-sm font-normal">Written : {{ date }}</p>
         </div>
       </div>
       <div class="max-w-screen-md mx-auto mt-5">
-        <p class="text-base font-normal text-gray-200 leading-5">
+        <p class="text-base font-normal text-gray-700 leading-5">
           {{ blog["post-summary"] }}
         </p>
         <div class="w-full h-[400px] bg-black overflow-hidden mt-5">
           <img :src="image" class="w-full h-full object-cover object-center" alt="" />
         </div>
         <p
-          class="font-normal text-xs text-gray-300 italic pl-3 border-l-2 border-gray-300 mt-1"
+          class="font-normal text-xs text-gray-500 italic pl-3 border-l-2 border-gray-400 mt-1"
         >
           {{ blog["image-caption"] }}
         </p>
@@ -76,16 +77,26 @@
 
       <div class="max-w-screen-md mx-auto mt-5">
         <div
-          class="text-gray-200 text-lg space-y-4 col-span-3 blog"
+          class="text-gray-700 text-lg space-y-4 col-span-3 blog"
           id="blog"
           v-html="blog['post-body']"
         ></div>
+        <div class="w-full space-x-2 items-center mb-4 flex flex-wrap">
+          <p class="text-sm font-medium w-fit text-slate-500 uppercase">Tag:</p>
+          <p
+            class="text-slate-700 w-fit text-sm italic py-1 px-2 bg-slate-200"
+            v-for="tag in tags"
+            :key="tag"
+          >
+            {{ tag }}
+          </p>
+        </div>
         <div class="col-span-3 lg:col-span-2 h-full">
           <div class="w-full h-full relative">
             <div
-              class="w-fit mx-auto rounded-2xl bg-opacity-100 p-5 px-10 bg-white sticky top-0 flex flex-col items-center space-y-3"
+              class="w-fit mx-auto rounded-2xl bg-opacity-100 p-5 px-10 bg-slate-100 sticky top-0 flex flex-col items-center space-y-3"
             >
-              <p class="text-gray-900 font-medium text-sm">
+              <p class="text-slate-900 font-medium text-sm">
                 Please, Don't forget to share!
               </p>
               <div class="w-fit flex space-x-4">
@@ -116,6 +127,7 @@ export default {
       blog: [],
       image: "",
       date: "",
+      tags: [],
       sociallinks: [
         {
           name: "facebook",
@@ -135,11 +147,12 @@ export default {
 
   mounted() {
     axios.get(`/post/${this.$route.params.id}`).then((res) => {
-      //console.log(res.data);
+      console.log(res.data);
       this.blog = res.data;
       this.image = res.data["main-image"]["url"];
       this.date = moment(res.data["created-on"]).format("MMMM Do YYYY, h:mm:ss a");
       document.title = res.data.name;
+      this.tags = res.data.tag.split(",");
     });
   },
   filters: {
